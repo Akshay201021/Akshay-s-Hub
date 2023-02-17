@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HJCXwnULK8RZVeR73-onGuom1BKvWEcP1A&usqp=CAU">
+
+<body>
+
+  <a href="file:///C:/Users/gollapudi/American%20football%20for%20website.html"> <button class="btn">Football</button> </a>
+  <a href="file:///C:/Users/gollapudi/Soccer.html"><button class="btn">Soccer</button></a>
+  <a href="file:///C:/Users/gollapudi/Tennis.html"><button class="btn">Tennis</button></a>
+    <h1 id="heading"> Akshay's Hub</h1>
+    <div id="flex-container">
+        <div id="flex-item">
+            <h4>Introduction</h4>
+     Hello my name is Akshay Gollapudi
+     I am 12 years old. I live in Frisco, Tx, USA, I have 1 sister, and I go to Roach Middle School.
+     I really like coding, and video games. My favorite video game is called Fortnite, and I love playing it with my friends from school.
+     It has been a dream of mine since I was 9 years old to have my own website, so here I present to you Akshay's Hub.
+        </div> 
+        <div id="flex-item">
+            <h4>What is this website for?</h4>
+            This is my first ever website, and so I wil be talking about my favorite sports, their rules, and the best players from each of them
+        </div>
+        <div id="flex-item">
+            <h4> The sports I'll be talking about </h4>
+            I will be talking about 3 different sports 
+            <ul style="color:black;">
+                <li>
+                     Football
+
+                </li>
+                <li>
+                    Soccer
+                </li>
+                <li>
+                    Tennis
+                </li>
+            </ul>        
+        </div>
+      
+    </div>
+    
+    
+  
+    <div>
+<image id ="image1"/> </div>    
+    <script>
+        var imgArray = [ 'https://media.wired.com/photos/5a3af51805f16a0c504434ee/191:100/w_2291,h_1199,c_limit/football-FA.jpg',
+        'https://daily.jstor.org/wp-content/uploads/2018/06/soccer_europe_1050x700.jpg',
+'https://photoresources.wtatennis.com/photo-resources/2019/08/15/dbb59626-9254-4426-915e-57397b6d6635/tennis-origins-e1444901660593.jpg?width=1200&height=630' ];
+var curIndex = 0;
+var imgDuration = 5000;
+function slideshow(){
+    document.getElementById('image1').src = imgArray[curIndex];
+    curIndex++
+    if (curIndex == imgArray.length)
+    {curIndex = 0; }
+    setTimeout("slideshow()" , imgDuration)
+}
+slideshow();
+</script>
+
+    </div>
+
+</body>    
